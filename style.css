@@ -1,0 +1,184 @@
+body {
+  background-color: #333; /*#45567d*/
+  color: #f0f0f0;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.man,
+.pole {
+  background-color: #fff;
+  width: 2px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.letters {
+  letter-spacing: 10px;
+}
+.container {
+  height: 300px;
+  max-width: 650px;
+  margin: auto;
+  border: 2px solid red;
+  padding: 50px 100px;
+  position: relative;
+}
+.container h3 {
+  font-size: 2.2rem;
+  position: absolute;
+
+  right: 20px;
+  bottom: 250px;
+}
+.none {
+  display: none;
+}
+
+.one {
+  height: 2px;
+  width: 600px;
+  position: absolute;
+  bottom: 50px;
+}
+.two {
+  height: 300px;
+  position: absolute;
+  left: 120px;
+  bottom: 50px;
+}
+.three {
+  height: 2px;
+  width: 400px;
+  position: absolute;
+  bottom: 325px;
+}
+.four {
+  height: 22px;
+  position: absolute;
+  bottom: 303px;
+  left: 400px;
+}
+
+.five {
+  background-color: transparent;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: 250px;
+  left: 375px;
+}
+.six {
+  height: 100px;
+  position: absolute;
+  bottom: 150px;
+  left: 400px;
+}
+.seven,
+.ten {
+  height: 50px;
+  position: absolute;
+  bottom: 200px;
+  left: 418px;
+  transform: rotate(-45deg);
+}
+.eight,
+.nine {
+  height: 50px;
+  position: absolute;
+  bottom: 200px;
+  left: 382px;
+  transform: rotate(45deg);
+}
+.nine,
+.ten {
+  bottom: 110px;
+}
+#answer > span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: yellow;
+  letter-spacing: 0.5rem;
+  padding: 0 0.5rem 0.5rem;
+  border-bottom: 2px solid yellow;
+  margin: 0 0.3rem;
+}
+
+/* Wrong Letters */
+.wrong-letters {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  font-size: 150%;
+  color: lightgoldenrodyellow;
+}
+.wrong-letters p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/*Game Over*/
+.over {
+  background-color: rgba(155, 155, 155, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.over div {
+  background-color: #be3144;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.over div h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+.over div button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #45567d;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.5s ease-in-out;
+}
+.over div button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.over div button:focus {
+  outline: none;
+}
+.over.none {
+  display: none;
+}
+
+/* Notification */
+.notification {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding: 0rem 1.25rem;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px 10px 0 0;
+  height: 80px;
+  margin-bottom: -80px;
+  transition: margin-bottom 0.5s ease-in-out;
+}
+
+.notification.show {
+  margin-bottom: 0px;
+}

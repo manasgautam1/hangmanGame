@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hangman Game</h1>
+  <div class="container">
+
+    <div id="man-1" class="pole one"></div>
+    <div id="man-2" class="pole two"></div>
+    <div id="man-3" class="pole three"></div>
+    <div id="man-4" class="pole four"></div>
+    <div id="man-5" class="man none five"></div>
+    <div id="man-6" class="man none six"></div>
+    <div id="man-7" class="man none seven"></div>
+    <div id="man-8" class="man none eight"></div>
+    <div id="man-9" class="man none nine"></div>
+    <div id="man-10" class="man none ten"></div>
+
+    <div class="wrong-letters none">
+      <p>Wrong Letters</p>
+      <span></span>
+    </div>
+
+  </div>
+  <div>
+    <h2>Guess The Hidden Word - Enter A Letter</h2>
+    <div id="answer">
+      
+    </div>
+  </div>
+
+  <div id="block" class="none over">
+    <div>
+      <h2 id="message"></h2>
+      <button type="button" id="playAgain">Play Again</button>
+    </div>
+  </div>
+
+  <div class="notification" id="notification">
+    <h2>You have already entered this letter</h2>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
